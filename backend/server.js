@@ -1,5 +1,8 @@
 import app from "./src/app.js";
+import connectDB from "./src/config/database.js";
 
-app.listen(5000, () => {
-  console.log("server is running on 5000 port");
+connectDB();
+
+app.listen(3000, () => {
+  console.log("server is running on 3000 port");
 });
